@@ -30,11 +30,6 @@ namespace Annonce.Services.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AnnonceId"), 1L, 1);
 
-                    b.Property<string>("AnnonceName")
-                        .IsRequired()
-                        .HasMaxLength(25)
-                        .HasColumnType("nvarchar(25)");
-
                     b.Property<string>("Desc")
                         .HasColumnType("nvarchar(max)");
 
@@ -50,6 +45,10 @@ namespace Annonce.Services.Migrations
                     b.Property<int>("UserId")
                         .HasColumnType("int");
 
+                    b.Property<string>("title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("AnnonceId");
 
                     b.ToTable("Annonces");
@@ -58,29 +57,42 @@ namespace Annonce.Services.Migrations
                         new
                         {
                             AnnonceId = 1,
-                            AnnonceName = "trotinette",
-                            Desc = "nice",
+                            Desc = "telephone economique",
+                            Image = new byte[0],
                             Premuim = false,
-                            Price = 15.0,
-                            UserId = 1
+                            Price = 233.0,
+                            UserId = 1,
+                            title = "nokia vintage"
                         },
                         new
                         {
                             AnnonceId = 2,
-                            AnnonceName = "sendala",
-                            Desc = "nice",
+                            Desc = "pc gamer neuf spec nvidia rtx ram 32g stockage 1tb",
+                            Image = new byte[0],
                             Premuim = false,
-                            Price = 30.0,
-                            UserId = 2
+                            Price = 12000.0,
+                            UserId = 1,
+                            title = "pc gamer neuf"
                         },
                         new
                         {
                             AnnonceId = 3,
-                            AnnonceName = "Audi A3",
-                            Desc = "nice",
+                            Desc = "trotinette electrique xiaomi 30h charge",
+                            Image = new byte[0],
+                            Premuim = false,
+                            Price = 3500.0,
+                            UserId = 1,
+                            title = "trotinnete electrique xiaomi"
+                        },
+                        new
+                        {
+                            AnnonceId = 4,
+                            Desc = "Golf8 importe de bern",
+                            Image = new byte[0],
                             Premuim = true,
-                            Price = 250000.0,
-                            UserId = 3
+                            Price = 335000.0,
+                            UserId = 1,
+                            title = "Golf8 importe"
                         });
                 });
 #pragma warning restore 612, 618

@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Annonce.Services.Migrations
 {
-    public partial class Annonce : Migration
+    public partial class Annonces : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -15,7 +15,7 @@ namespace Annonce.Services.Migrations
                 {
                     AnnonceId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    AnnonceName = table.Column<string>(type: "nvarchar(25)", maxLength: 25, nullable: false),
+                    title = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Price = table.Column<double>(type: "float", nullable: false),
                     Desc = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     UserId = table.Column<int>(type: "int", nullable: false),
@@ -29,18 +29,14 @@ namespace Annonce.Services.Migrations
 
             migrationBuilder.InsertData(
                 table: "Annonces",
-                columns: new[] { "AnnonceId", "AnnonceName", "Desc", "Image", "Premuim", "Price", "UserId" },
-                values: new object[] { 1, "trotinette", "nice", null, false, 15.0, 1 });
-
-            migrationBuilder.InsertData(
-                table: "Annonces",
-                columns: new[] { "AnnonceId", "AnnonceName", "Desc", "Image", "Premuim", "Price", "UserId" },
-                values: new object[] { 2, "sendala", "nice", null, false, 30.0, 2 });
-
-            migrationBuilder.InsertData(
-                table: "Annonces",
-                columns: new[] { "AnnonceId", "AnnonceName", "Desc", "Image", "Premuim", "Price", "UserId" },
-                values: new object[] { 3, "Audi A3", "nice", null, true, 250000.0, 3 });
+                columns: new[] { "AnnonceId", "Desc", "Image", "Premuim", "Price", "UserId", "title" },
+                values: new object[,]
+                {
+                    { 1, "telephone economique", new byte[0], false, 233.0, 1, "nokia vintage" },
+                    { 2, "pc gamer neuf spec nvidia rtx ram 32g stockage 1tb", new byte[0], false, 12000.0, 1, "pc gamer neuf" },
+                    { 3, "trotinette electrique xiaomi 30h charge", new byte[0], false, 3500.0, 1, "trotinnete electrique xiaomi" },
+                    { 4, "Golf8 importe de bern", new byte[0], true, 335000.0, 1, "Golf8 importe" }
+                });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

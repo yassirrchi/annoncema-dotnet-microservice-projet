@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Annonce\\User.Services\\User.Services.csproj": {}
+    "C:\\Users\\asus\\Documents\\1.netprob\\Annonce\\User.Services\\User.Services.csproj": {}
   },
   "projects": {
-    "D:\\Annonce\\User.Services\\User.Services.csproj": {
+    "C:\\Users\\asus\\Documents\\1.netprob\\Annonce\\User.Services\\User.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Annonce\\User.Services\\User.Services.csproj",
+        "projectUniqueName": "C:\\Users\\asus\\Documents\\1.netprob\\Annonce\\User.Services\\User.Services.csproj",
         "projectName": "User.Services",
-        "projectPath": "D:\\Annonce\\User.Services\\User.Services.csproj",
-        "packagesPath": "C:\\Users\\K\\.nuget\\packages\\",
-        "outputPath": "D:\\Annonce\\User.Services\\obj\\",
+        "projectPath": "C:\\Users\\asus\\Documents\\1.netprob\\Annonce\\User.Services\\User.Services.csproj",
+        "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\asus\\Documents\\1.netprob\\Annonce\\User.Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\K\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

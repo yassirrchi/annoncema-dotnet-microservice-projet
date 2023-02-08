@@ -44,6 +44,27 @@ namespace User.Services.Repository
             return _mapper.Map<Users, UserDto>(user);
         }
 
+
+        public async Task<UserDto> UserLog(UserDto userDto)
+        {
+            Users user =await _db.Users.Where(x => x.email.Equals(userDto.email)
+            && x.password.Equals(userDto.password)
+            ).FirstOrDefaultAsync();
+
+            if (user.UserId > 0)
+            {
+                return _mapper.Map<Users, UserDto>(user);
+            }
+            else
+            {
+                return _mapper.Map<Users, UserDto>(null);
+            }
+         
+           
+        }
+
+
+
         public async Task<bool> DeleteUser(int userId)
         {
             try

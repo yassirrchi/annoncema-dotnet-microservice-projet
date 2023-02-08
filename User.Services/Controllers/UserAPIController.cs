@@ -56,7 +56,7 @@ namespace user.Services.Controllers
 
 
             [HttpPost]
-            [Authorize]
+            
             public async Task<object> Post([FromBody] UserDto userDto)
             {
                 try
@@ -74,7 +74,27 @@ namespace user.Services.Controllers
             }
 
 
-            [HttpPut]
+        [HttpPost]
+        [Route("/log")]
+        public async Task<object> Log([FromBody] UserDto userDto)
+        {
+            try
+            {
+                UserDto model = await _userRepository.UserLog(userDto);
+                _response.Result = model;
+            }
+            catch (Exception ex)
+            {
+                _response.IsSuccess = false;
+                _response.ErrorMessages
+                     = new List<string>() { ex.ToString() };
+            }
+            return _response;
+        }
+
+
+
+        [HttpPut]
             [Authorize]
             public async Task<object> Put([FromBody] UserDto userDto)
             {

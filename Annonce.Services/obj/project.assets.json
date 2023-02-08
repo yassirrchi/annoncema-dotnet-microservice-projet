@@ -933,29 +933,6 @@
             "rid": "win"
           }
         }
-      },
-      "User.Services/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "AutoMapper": "12.0.0",
-          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.0",
-          "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.11",
-          "Microsoft.EntityFrameworkCore": "6.0.11",
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.11",
-          "Swashbuckle.AspNetCore": "6.2.3",
-          "Swashbuckle.AspNetCore.Annotations": "6.2.3",
-          "Swashbuckle.AspNetCore.SwaggerUI": "6.2.3"
-        },
-        "compile": {
-          "bin/placeholder/User.Services.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/User.Services.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
       }
     }
   },
@@ -2382,11 +2359,6 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
-    },
-    "User.Services/1.0.0": {
-      "type": "project",
-      "path": "../User.Services/User.Services.csproj",
-      "msbuildProject": "../User.Services/User.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2399,24 +2371,23 @@
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.11",
       "Swashbuckle.AspNetCore >= 6.2.3",
       "Swashbuckle.AspNetCore.Annotations >= 6.2.3",
-      "Swashbuckle.AspNetCore.SwaggerUI >= 6.2.3",
-      "User.Services >= 1.0.0"
+      "Swashbuckle.AspNetCore.SwaggerUI >= 6.2.3"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\K\\.nuget\\packages\\": {}
+    "C:\\Users\\asus\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Annonce\\Annonce.Services\\Annonce.Services.csproj",
+      "projectUniqueName": "C:\\Users\\asus\\Documents\\1.netprob\\Annonce\\Annonce.Services\\Annonce.Services.csproj",
       "projectName": "Annonce.Services",
-      "projectPath": "D:\\Annonce\\Annonce.Services\\Annonce.Services.csproj",
-      "packagesPath": "C:\\Users\\K\\.nuget\\packages\\",
-      "outputPath": "D:\\Annonce\\Annonce.Services\\obj\\",
+      "projectPath": "C:\\Users\\asus\\Documents\\1.netprob\\Annonce\\Annonce.Services\\Annonce.Services.csproj",
+      "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\asus\\Documents\\1.netprob\\Annonce\\Annonce.Services\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\K\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2429,11 +2400,7 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {
-            "D:\\Annonce\\User.Services\\User.Services.csproj": {
-              "projectPath": "D:\\Annonce\\User.Services\\User.Services.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

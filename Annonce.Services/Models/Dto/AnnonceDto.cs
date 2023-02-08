@@ -3,15 +3,18 @@
     public class AnnonceDto
     {
        
-        public int ProductId { get; set; }
+        public int AnnonceId { get; set; }
         
-        public string ProductName { get; set; }
+        public string title { get; set; }
    
         public double Price { get; set; }
-        public string CategoryName { get; set; }
-        public string ImageURL { get; set; }
+        public string desc { get; set; }
+
+        public bool Premuim { get; set; }
         public int UserId { get; set; }
         public string User { get; set; }
+
+        public byte[] Image { get; set; }
 
     }
 }

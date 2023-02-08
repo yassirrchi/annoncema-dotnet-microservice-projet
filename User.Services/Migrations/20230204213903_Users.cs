@@ -4,7 +4,7 @@
 
 namespace User.Services.Migrations
 {
-    public partial class User : Migration
+    public partial class Users : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -27,17 +27,7 @@ namespace User.Services.Migrations
             migrationBuilder.InsertData(
                 table: "Users",
                 columns: new[] { "UserId", "UserName", "email", "password", "phone" },
-                values: new object[] { 1, "hassan", "hassan@gmail.com", "1234", "0633445566" });
-
-            migrationBuilder.InsertData(
-                table: "Users",
-                columns: new[] { "UserId", "UserName", "email", "password", "phone" },
-                values: new object[] { 2, "hamid", "hamid@gmail.com", "1234", "0633445566" });
-
-            migrationBuilder.InsertData(
-                table: "Users",
-                columns: new[] { "UserId", "UserName", "email", "password", "phone" },
-                values: new object[] { 3, "SAID", "SAID@gmail.com", "1234", "0633445566" });
+                values: new object[] { 1, "Yassir rchi", "yassirrchiexemple@gmail.com", "123123", "0633445566" });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

@@ -19,30 +19,44 @@ namespace Annonce.Services.DbContexts
             modelBuilder.Entity<Annonces>().HasData(new Annonces
             {
                 AnnonceId = 1,
-                AnnonceName = "trotinette",
-                Price = 15,
-                Desc= "nice",
+                title = "nokia vintage",
+                Price = 233,
+                Desc= "telephone economique",
                 Premuim = false,
-                UserId=1
+                UserId=1,
+                Image= new byte[0],
             });
             modelBuilder.Entity<Annonces>().HasData(new Annonces
             {
                 AnnonceId = 2,
-                AnnonceName = "sendala",
-                Price = 30,
-                Desc = "nice",
+                title  = "pc gamer neuf",
+                Price = 12000,
+                Desc = "pc gamer neuf spec nvidia rtx ram 32g stockage 1tb",
                 Premuim = false,
-                UserId=2
+                UserId=1,
+                Image = new byte[0],
             });
             modelBuilder.Entity<Annonces>().HasData(new Annonces
             {
                 AnnonceId = 3,
-                AnnonceName = "Audi A3",
-                Price = 250000,
-                Desc = "nice",
+                title = "trotinnete electrique xiaomi",
+                Price = 3500,
+                Desc = "trotinette electrique xiaomi 30h charge",
+                Premuim = false,
+                UserId=1,
+                Image = new byte[1],
+            }); 
+            modelBuilder.Entity<Annonces>().HasData(new Annonces
+            {
+                AnnonceId = 4,
+                title = "Golf8 importe",
+                Price = 335000,
+                Desc = "Golf8 importe de bern",
                 Premuim = true,
-                UserId=3
+                UserId = 1,
+                Image = new byte[1],
             });
+
         }
 
     }

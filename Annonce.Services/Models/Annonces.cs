@@ -11,8 +11,8 @@ namespace Annonce.Services.Models
     {
         [Key]
         public int AnnonceId { get; set; }
-        [Required, StringLength(25)]
-        public string AnnonceName { get; set; }
+        [Required]
+        public string title { get; set; }
         [Range(1, 1000)]
         public double Price { get; set; }
         public string Desc { get; set; }

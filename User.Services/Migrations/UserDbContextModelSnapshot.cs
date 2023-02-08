@@ -51,25 +51,9 @@ namespace User.Services.Migrations
                         new
                         {
                             UserId = 1,
-                            UserName = "hassan",
-                            email = "hassan@gmail.com",
-                            password = "1234",
-                            phone = "0633445566"
-                        },
-                        new
-                        {
-                            UserId = 2,
-                            UserName = "hamid",
-                            email = "hamid@gmail.com",
-                            password = "1234",
-                            phone = "0633445566"
-                        },
-                        new
-                        {
-                            UserId = 3,
-                            UserName = "SAID",
-                            email = "SAID@gmail.com",
-                            password = "1234",
+                            UserName = "Yassir rchi",
+                            email = "yassirrchiexemple@gmail.com",
+                            password = "123123",
                             phone = "0633445566"
                         });
                 });
