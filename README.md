@@ -5,9 +5,13 @@
 
 ## api Users
 
+
+![4](https://user-images.githubusercontent.com/65183563/217678437-b403e5d0-66b0-404b-afac-2efc1d129eb2.png)
+
 ![1swg1](https://user-images.githubusercontent.com/65183563/214978876-518d45c6-f377-40ed-8fa1-3f6b66f24a0c.png)
 
 ## api Annonces
+![5](https://user-images.githubusercontent.com/65183563/217678568-ae01d567-6689-4a5b-bb5c-0bcdf0beb366.png)
 
 
-![2swg](https://user-images.githubusercontent.com/65183563/214978915-f7e5bd66-d6d0-4145-ad5d-35d01850bbe3.png)
+
